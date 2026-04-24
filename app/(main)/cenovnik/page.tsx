@@ -5,6 +5,7 @@ export const metadata = buildMetadata({ title: "Cenovnik" });
 const services = [
   { name: "Dostava/preuzimanje u centru Novog Sada", price: "20 €" },
   { name: "Dostava/preuzimanje u Srbiji – do 50 km", price: "30 €" },
+  { name: "Dostava/preuzimanje u Srbiji – do 100 km", price: "40 €" },
   { name: "Dostava/preuzimanje u Srbiji – do 200 km", price: "90 €" },
   { name: "Dostava/preuzimanje u Srbiji – do 300 km", price: "140 €" },
   { name: "Najam van radnog vremena poslovnice", price: "20 €" },
