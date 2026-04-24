@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(node --version:*)",
+      "Bash(npm:*)",
+      "Bash(npx tsc *)",
+      "WebFetch(domain:balkanrentacar.rs)",
+      "Bash(xargs sed *)",
+      "Bash(node -e \"const r=require\\('./node_modules/react/package.json'\\); const n=require\\('./node_modules/next/package.json'\\); const s=require\\('./node_modules/sanity/package.json'\\); console.log\\('react:', r.version, 'next:', n.version, 'sanity:', s.version\\)\")",
+      "Bash(node -e \"const r=require\\('./node_modules/react'\\); console.log\\('useEffectEvent:', typeof r.useEffectEvent\\)\")"
+    ]
+  }
+}
