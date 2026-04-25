@@ -53,7 +53,7 @@ export default function CarCard({ car }: CarCardProps) {
             car.fuel,
             `${car.seats} mesta`,
           ].map((s) => (
-            <span key={s} className="text-xs text-[#94a3b8] bg-[#1e2030] px-3 py-1.5 rounded-full">
+            <span key={s} className="text-xs text-[#cbd5e1] bg-[#1e2030] px-3 py-1.5 rounded-full">
               {s}
             </span>
           ))}
@@ -61,7 +61,7 @@ export default function CarCard({ car }: CarCardProps) {
 
         <div className="mt-auto flex items-center justify-between">
           <div>
-            <span className="text-[#94a3b8] text-sm">od </span>
+            <span className="text-[#cbd5e1] text-sm">od </span>
             <span className="text-2xl font-extrabold text-[#1a5cf5]">{car.pricePerDay}€</span>
           </div>
           <Link

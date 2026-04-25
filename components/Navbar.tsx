@@ -35,7 +35,7 @@ export default function Navbar() {
                 className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                   path === l.href
                     ? "text-white bg-[#1e2030]"
-                    : "text-[#94a3b8] hover:text-white hover:bg-[#1e2030]"
+                    : "text-[#cbd5e1] hover:text-white hover:bg-[#1e2030]"
                 }`}
               >
                 {l.label}
@@ -53,7 +53,7 @@ export default function Navbar() {
             {CONTACT_PHONE}
           </a>
 
-          <button onClick={() => setOpen(!open)} className="lg:hidden p-2 text-[#94a3b8]" aria-label="Meni">
+          <button onClick={() => setOpen(!open)} className="lg:hidden p-2 text-[#cbd5e1]" aria-label="Meni">
             {open
               ? <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
               : <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
@@ -68,7 +68,7 @@ export default function Navbar() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className={`px-4 py-3 rounded-md text-sm font-medium ${path === l.href ? "text-white bg-[#1e2030]" : "text-[#94a3b8]"}`}
+                className={`px-4 py-3 rounded-md text-sm font-medium ${path === l.href ? "text-white bg-[#1e2030]" : "text-[#cbd5e1]"}`}
               >
                 {l.label}
               </Link>

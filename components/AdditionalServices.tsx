@@ -35,7 +35,7 @@ function Table({
             i % 2 === 0 ? "bg-[#0b0b0f]" : "bg-[#0d0d12]"
           } ${i < rows.length - 1 ? "border-b border-[#1e1e2e]" : ""}`}
         >
-          <span className="text-[#94a3b8] pr-4">{row.service ?? row.item}</span>
+          <span className="text-[#cbd5e1] pr-4">{row.service ?? row.item}</span>
           <span className={`${priceColor} font-bold whitespace-nowrap`}>{row.price}</span>
         </div>
       ))}
@@ -53,7 +53,7 @@ export default function AdditionalServices() {
           <h2 className="text-3xl sm:text-4xl font-bold text-[#f8fafc] mb-4">
             Dodatne usluge i troškovi
           </h2>
-          <p className="text-[#94a3b8] max-w-xl mx-auto">
+          <p className="text-[#cbd5e1] max-w-xl mx-auto">
             Sve cene su transparentne i jasno definisane unapred.
           </p>
         </div>
@@ -71,7 +71,7 @@ export default function AdditionalServices() {
             </div>
 
             <div className="bg-[#13131a] border border-[#1e1e2e] rounded-xl p-5">
-              <p className="text-[#94a3b8] text-sm leading-relaxed">
+              <p className="text-[#cbd5e1] text-sm leading-relaxed">
                 <span className="text-[#f8fafc] font-semibold block mb-1">
                   Oštećenja koja ne pokriva osiguranje
                 </span>

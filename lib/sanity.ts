@@ -24,6 +24,8 @@ export function urlFor(source: SanityImageSource): any {
   return builder.image(source);
 }
 
+const revalidate = { next: { revalidate: 60 } };
+
 export async function getCars(kategorija?: string) {
   if (!client) return [];
   const filter = kategorija
@@ -34,7 +36,8 @@ export async function getCars(kategorija?: string) {
       _id, name, slug, "category": category->title, pricePerDay,
       transmission, fuel, seats, year, image, available
     }`,
-    kategorija ? { kategorija } : {}
+    kategorija ? { kategorija } : {},
+    revalidate
   );
 }
 
@@ -43,7 +46,9 @@ export async function getCategories() {
   return client.fetch(
     `*[_type == "category"] | order(title asc) {
       _id, title, slug, image, startingPrice
-    }`
+    }`,
+    {},
+    revalidate
   );
 }
 
@@ -55,6 +60,7 @@ export async function getCarBySlug(slug: string) {
       transmission, fuel, seats, year, image, available,
       description, features, power, color, pricingTable
     }`,
-    { slug }
+    { slug },
+    revalidate
   );
 }

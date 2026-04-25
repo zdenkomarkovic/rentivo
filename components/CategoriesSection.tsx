@@ -15,7 +15,7 @@ export default async function CategoriesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Kategorije vozila</h2>
-          <p className="text-[#94a3b8] max-w-xl mx-auto">
+          <p className="text-[#cbd5e1] max-w-xl mx-auto">
             Pronađite vozilo koje odgovara vašim potrebama.
           </p>
         </div>
@@ -52,11 +52,11 @@ export default async function CategoriesSection() {
               <div className="p-5 flex flex-col flex-1">
                 <h3 className="text-white font-bold text-xl mb-1">{cat.title}</h3>
                 {cat.startingPrice != null ? (
-                  <p className="text-[#94a3b8] text-sm">
+                  <p className="text-[#cbd5e1] text-sm">
                     od <span className="text-[#1a5cf5] font-semibold">{cat.startingPrice}€</span>
                   </p>
                 ) : (
-                  <p className="text-[#94a3b8] text-sm">Pogledaj vozila</p>
+                  <p className="text-[#cbd5e1] text-sm">Pogledaj vozila</p>
                 )}
               </div>
             </Link>

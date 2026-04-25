@@ -4,7 +4,7 @@ export const SITE_DESCRIPTION = "Rentivo Rent a Car Novi Sad – Iznajmite vozil
 
 export const CONTACT_PHONE = "+381 61 456 25 60";
 export const CONTACT_PHONE_HREF = "tel:+38161456 2560";
-export const CONTACT_EMAIL = "zoran.kozul99880@gmail.com";
+export const CONTACT_EMAIL = "officerentivo@gmail.com";
 export const COMPANY_ADDRESS = "Trg Republike 20, Novi Sad";
 export const PICKUP_ADDRESS = "Karlovački Drum BB, Petrovaradin";
 export const PICKUP_LAT = 45.222957003403415;

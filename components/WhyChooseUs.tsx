@@ -66,7 +66,7 @@ export default function WhyChooseUs() {
           <h2 className="text-3xl sm:text-4xl font-bold text-[#f8fafc] mb-4">
             Zašto izabrati Rentivo?
           </h2>
-          <p className="text-[#94a3b8] max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[#cbd5e1] max-w-2xl mx-auto leading-relaxed">
             Transparentnost, tačnost i profesionalan pristup su temelj našeg poslovanja.
             Naš cilj nije samo da vam pružimo automobil – već da svaka vožnja bude bezbrižna.
           </p>
@@ -84,7 +84,7 @@ export default function WhyChooseUs() {
                 {item.icon}
               </div>
               <h3 className="text-[#f8fafc] font-semibold text-base mb-2">{item.title}</h3>
-              <p className="text-[#94a3b8] text-sm leading-relaxed">{item.desc}</p>
+              <p className="text-[#cbd5e1] text-sm leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>

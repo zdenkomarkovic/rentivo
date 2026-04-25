@@ -12,7 +12,7 @@ export default function ReservationForm({ carName }: { carName: string }) {
     return (
       <div className="rounded-2xl border border-green-500/30 bg-green-500/10 p-8 text-center">
         <p className="text-green-400 font-semibold text-lg mb-2">Zahtev poslat!</p>
-        <p className="text-[#94a3b8] text-sm">{state.message}</p>
+        <p className="text-[#cbd5e1] text-sm">{state.message}</p>
       </div>
     );
   }
@@ -40,7 +40,7 @@ export default function ReservationForm({ carName }: { carName: string }) {
       </div>
 
       <div className="flex flex-col gap-1.5">
-        <label className="text-[#94a3b8] text-[10px] font-medium uppercase tracking-wide">Poruka</label>
+        <label className="text-[#cbd5e1] text-[10px] font-medium uppercase tracking-wide">Poruka</label>
         <textarea
           name="message"
           rows={3}
@@ -74,7 +74,7 @@ function TimePicker({ label, name, className }: { label: string; name: string; c
 
   return (
     <div className={`flex flex-col gap-1.5 ${className ?? ""}`}>
-      <label className="text-[#94a3b8] text-[10px] font-medium uppercase tracking-wide">{label}</label>
+      <label className="text-[#cbd5e1] text-[10px] font-medium uppercase tracking-wide">{label}</label>
       <input type="hidden" name={name} value={`${hour}:${minute}`} />
       <div className="flex items-center gap-1.5">
         <select value={hour} onChange={e => setHour(e.target.value)} className={selectClass}>
@@ -112,7 +112,7 @@ function Field({
 }) {
   return (
     <div className={`flex flex-col gap-1.5 ${className ?? ""}`}>
-      <label className="text-[#94a3b8] text-[10px] font-medium uppercase tracking-wide">{label}</label>
+      <label className="text-[#cbd5e1] text-[10px] font-medium uppercase tracking-wide">{label}</label>
       <input
         name={name}
         type={type}
@@ -121,7 +121,7 @@ function Field({
         readOnly={readOnly}
         className={`border border-[#404880] rounded-xl px-3 py-2 text-white text-sm placeholder-[#64748b] focus:outline-none transition-colors [color-scheme:dark] ${
           readOnly
-            ? "bg-[#0d0d14] text-[#94a3b8] cursor-default"
+            ? "bg-[#0d0d14] text-[#cbd5e1] cursor-default"
             : "bg-[#111120] focus:border-[#1a5cf5]"
         }`}
       />

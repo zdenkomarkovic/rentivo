@@ -12,7 +12,7 @@ export default function ContactForm() {
     return (
       <div className="rounded-2xl border border-green-500/30 bg-green-500/10 p-10 text-center">
         <p className="text-green-400 font-semibold text-lg mb-2">Poruka poslata!</p>
-        <p className="text-[#94a3b8] text-sm">{state.message}</p>
+        <p className="text-[#cbd5e1] text-sm">{state.message}</p>
       </div>
     );
   }
@@ -32,7 +32,7 @@ export default function ContactForm() {
       </div>
 
       <div className="flex flex-col gap-1.5">
-        <label className="text-[#94a3b8] text-[10px] font-medium uppercase tracking-wide">Poruka *</label>
+        <label className="text-[#cbd5e1] text-[10px] font-medium uppercase tracking-wide">Poruka *</label>
         <textarea
           name="message"
           rows={5}
@@ -61,7 +61,7 @@ export default function ContactForm() {
 function Field({ label, name, type, placeholder }: { label: string; name: string; type: string; placeholder: string }) {
   return (
     <div className="flex flex-col gap-1.5">
-      <label className="text-[#94a3b8] text-[10px] font-medium uppercase tracking-wide">{label}</label>
+      <label className="text-[#cbd5e1] text-[10px] font-medium uppercase tracking-wide">{label}</label>
       <input
         name={name}
         type={type}

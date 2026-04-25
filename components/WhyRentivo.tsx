@@ -7,12 +7,12 @@ export default function WhyRentivo() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
               Zašto izabrati Rentivo?
             </h2>
-            <p className="text-[#94a3b8] leading-relaxed mb-6">
+            <p className="text-[#cbd5e1] leading-relaxed mb-6">
               Verujemo da poverenje dolazi iz iskustva. Zato su transparentnost, tačnost i
               profesionalan pristup temelj našeg poslovanja. Kada se odlučite za iznajmljivanje
               vozila kod nas, znajte da birate sigurnost, kvalitet i poštovanje dogovora.
             </p>
-            <p className="text-[#94a3b8] leading-relaxed">
+            <p className="text-[#cbd5e1] leading-relaxed">
               Naš cilj nije da vam samo pružimo automobil, već da obezbedimo da svaka vožnja
               bude bezbrižna i prijatna. Bez obzira da li vam je potrebno vozilo za poslovni
               sastanak, vikend putovanje sa porodicom ili kao privremeno rešenje dok je vaše
@@ -34,7 +34,7 @@ export default function WhyRentivo() {
                   </svg>
                 </div>
                 <h3 className="font-bold text-white mb-1">{item.title}</h3>
-                <p className="text-sm text-[#94a3b8]">{item.desc}</p>
+                <p className="text-sm text-[#cbd5e1]">{item.desc}</p>
               </div>
             ))}
           </div>

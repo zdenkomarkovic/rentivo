@@ -66,7 +66,7 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Šta kažu naši klijenti</h2>
-          <p className="text-[#94a3b8] max-w-xl mx-auto">
+          <p className="text-[#cbd5e1] max-w-xl mx-auto">
             Poverenje naših korisnika je naša najveća vrednost.
           </p>
         </div>
@@ -89,7 +89,7 @@ export default function Testimonials() {
                 </div>
                 <div>
                   <p className="text-white text-sm font-semibold">{review.name}</p>
-                  <p className="text-[#64748b] text-xs">{review.location}</p>
+                  <p className="text-[#94a3b8] text-xs">{review.location}</p>
                 </div>
               </div>
             </div>

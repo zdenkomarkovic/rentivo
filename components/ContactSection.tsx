@@ -1,6 +1,6 @@
 import {
   CONTACT_PHONE, CONTACT_PHONE_HREF, CONTACT_EMAIL,
-  COMPANY_ADDRESS, PICKUP_ADDRESS, SOCIAL_INSTAGRAM,
+  PICKUP_ADDRESS, SOCIAL_INSTAGRAM,
 } from "@/lib/constants";
 import ContactForm from "./ContactForm";
 
@@ -22,15 +22,7 @@ const items = [
     ),
   },
   {
-    label: "Sedište firme",
-    value: COMPANY_ADDRESS,
-    href: undefined,
-    icon: (
-      <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
-    ),
-  },
-  {
-    label: "Preuzimanje vozila",
+    label: "Lokacija",
     value: PICKUP_ADDRESS,
     href: undefined,
     icon: (
@@ -50,14 +42,13 @@ const items = [
 
 export default function ContactSection() {
   const mapPickup = "https://maps.google.com/maps?q=45.222957003403415,19.900640747113002&z=16&output=embed&hl=sr";
-  const mapHQ     = "https://maps.google.com/maps?q=45.25521,19.84250&z=16&output=embed&hl=sr";
 
   return (
     <section className="py-20 bg-[#0d0d14]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Kontakt i lokacija</h2>
-          <p className="text-[#94a3b8] max-w-xl mx-auto">
+          <p className="text-[#cbd5e1] max-w-xl mx-auto">
             Pronađite nas ili nas kontaktirajte za rezervaciju i sva pitanja.
           </p>
         </div>
@@ -73,7 +64,7 @@ export default function ContactSection() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-[#94a3b8] text-xs font-medium uppercase tracking-wide mb-0.5">{item.label}</p>
+                  <p className="text-[#cbd5e1] text-xs font-medium uppercase tracking-wide mb-0.5">{item.label}</p>
                   {item.href ? (
                     <a
                       href={item.href}
@@ -94,37 +85,20 @@ export default function ContactSection() {
           <ContactForm />
         </div>
 
-        {/* Dve mape jedna pored druge */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <div className="rounded-2xl overflow-hidden border border-[#404880]">
-            <div className="bg-[#181828] px-4 py-2.5 border-b border-[#404880]">
-              <p className="text-[#94a3b8] text-xs font-medium uppercase tracking-wide">Sedište firme – Trg Republike 20, Novi Sad</p>
-            </div>
-            <iframe
-              src={mapHQ}
-              width="100%"
-              height="360"
-              style={{ border: 0, display: "block" }}
-              loading="lazy"
-              title="Sedište firme – Trg Republike 20, Novi Sad"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+        {/* Mapa preuzimanja vozila */}
+        <div className="rounded-2xl overflow-hidden border border-[#404880]">
+          <div className="bg-[#181828] px-4 py-2.5 border-b border-[#404880]">
+            <p className="text-[#cbd5e1] text-xs font-medium uppercase tracking-wide">Karlovački Drum BB, Petrovaradin</p>
           </div>
-
-          <div className="rounded-2xl overflow-hidden border border-[#404880]">
-            <div className="bg-[#181828] px-4 py-2.5 border-b border-[#404880]">
-              <p className="text-[#94a3b8] text-xs font-medium uppercase tracking-wide">Preuzimanje vozila – Karlovački Drum BB, Petrovaradin</p>
-            </div>
-            <iframe
-              src={mapPickup}
-              width="100%"
-              height="360"
-              style={{ border: 0, display: "block" }}
-              loading="lazy"
-              title="Preuzimanje vozila – Karlovački Drum BB, Petrovaradin"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
+          <iframe
+            src={mapPickup}
+            width="100%"
+            height="360"
+            style={{ border: 0, display: "block" }}
+            loading="lazy"
+            title="Karlovački Drum BB, Petrovaradin"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </div>
       </div>
     </section>
